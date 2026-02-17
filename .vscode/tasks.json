@@ -1,0 +1,54 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"type": "cppbuild",
+		"label": "Build OpenGL (GLEW + GLFW + Assimp)",
+		"command": "/usr/bin/clang++",
+		"args": [
+		  "-std=c++17",
+		  "-Wall",
+		  "-g",
+  
+		  "-I/opt/homebrew/include",
+		  "-I${workspaceFolder}/external/glm",
+		  "-I${workspaceFolder}/dependencies/include",
+  
+		  "-L/opt/homebrew/lib",
+		  "-L${workspaceFolder}/dependencies/library",
+  
+		  "${workspaceFolder}/main.cpp",
+  
+		  "-lGLEW",
+		  "-lglfw",
+		  "-lassimp",
+  
+		  "-Wl,-rpath,/opt/homebrew/lib",
+		  "-Wl,-rpath,${workspaceFolder}/dependencies/library",
+  
+		  "-o",
+		  "${workspaceFolder}/app",
+  
+		  "-framework",
+		  "OpenGL",
+		  "-framework",
+		  "Cocoa",
+		  "-framework",
+		  "IOKit",
+		  "-framework",
+		  "CoreVideo",
+  
+		  "-Wno-deprecated"
+		],
+		"options": {
+		  "cwd": "${workspaceFolder}"
+		},
+		"problemMatcher": ["$gcc"],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		}
+	  }
+	]
+  }
+  
