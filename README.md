@@ -48,12 +48,14 @@ Make sure to place the models inside the project directory.
    - Go to "Terminal" -> "New Terminal" and rung ./app
    - A new window should open showing the 3D scene.  
 
-4. **Control the character**  
+4. **Control the character**
+   - To select a character - mause click on the desired character. 
    - Use the keys described in the **Features** section:  
      - **WASD** – Move the character  
      - **C** – Change couch textures  
      - **N** – Toggle day/night  
-     - **L** – Turn on the light  
+     - **L** – Turn on the light
+       
 
 ----------------------
 Credits/References
