@@ -19,6 +19,7 @@ Includes following dependencies:
 - OpenGL
 - GLFW
 - GLM
+- Assimp
 
 ------------------------
 
