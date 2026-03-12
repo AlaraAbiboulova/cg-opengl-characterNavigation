@@ -36,8 +36,24 @@ Make sure to place the models inside the project directory.
 
 #How to Use
 
-- Open the project folder in your preferred IDE or editor.  
-- Navigation and interactions are done with the keys described in the Features section.
+1. **Open the project in Visual Studio Code**  
+   - Make sure you have **Visual Studio Code** installed.  
+   - Open VS Code, then click **File → Open Folder** and select the folder containing this project.  
+
+2. **Make sure the models are in place**  
+   - Download the 3D models from the link in the **Note - Models** section.  
+   - Place them in the `models/` folder inside the project directory.  
+
+3. **Run the project**  
+   - Go to "Terminal" -> "New Terminal" and rung ./app
+   - A new window should open showing the 3D scene.  
+
+4. **Control the character**  
+   - Use the keys described in the **Features** section:  
+     - **WASD** – Move the character  
+     - **C** – Change couch textures  
+     - **N** – Toggle day/night  
+     - **L** – Turn on the light  
 
 ----------------------
 Credits/References
